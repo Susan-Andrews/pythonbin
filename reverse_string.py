@@ -8,12 +8,16 @@ print(str(str_rev)[::-1])
 
 
 #METHOD 2
-str_rev= input("enter a string which is to be reversed : ")
-reversed_num = 0
+def reverse(string_rev):
+    str = ""
+    for i in string_rev:
+        str = i + str
+    return str
+  
 
-while str_rev != 0:
-    digit = str_rev % 10
-    reversed_num = reversed_num * 10 + digit
-    str_rev //= 10
-
-print("Reversed Number: " + str(reversed_num))
+string_rev=input("Enter a string to be reversed: ")
+print("The original string is : ", end="")
+print(string_rev)
+  
+print("The reversed string  is : ", end="")
+print(reverse(string_rev))
