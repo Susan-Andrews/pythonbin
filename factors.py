@@ -4,3 +4,5 @@ def factors(a):
             print(i)
 print(factors(70))
 print(factors(2))            
+
+#edit needed since it prints none at last
